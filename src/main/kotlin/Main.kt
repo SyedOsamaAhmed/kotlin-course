@@ -9,5 +9,17 @@ fun main() {
     val minIntegerValue = Int.MIN_VALUE
     val maxIntegerValue = Int.MAX_VALUE
 
-    println("Maximum Value:$maxIntegerValue, Minimum Value:$minIntegerValue")
+    println("Maximum Int Value:$maxIntegerValue, Minimum Int Value:$minIntegerValue")
+
+    val minByteValue=Byte.MIN_VALUE
+    val maxByteValue=Byte.MAX_VALUE
+    println("Maximum Byte value:$maxByteValue, Minimum Byte Value:$minByteValue")
+
+    val minShortValue=Short.MIN_VALUE
+    val maxShortValue= Short.MAX_VALUE
+    println("Maximum Short value:$maxShortValue, Minimum Short Value:$minShortValue")
+
+    val minLongValue=Long.MIN_VALUE
+    val maxLongValue=Long.MAX_VALUE
+    println("Maximum Long value:$maxLongValue, Minimum Long Value:$minLongValue")
 }
