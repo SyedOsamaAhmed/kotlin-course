@@ -29,7 +29,7 @@ fun main() {
 //    }
 
     //while loop:
-    var number=0
+//    var number=0
 
 //    while(number<10){
 //        number++
@@ -52,18 +52,44 @@ fun main() {
 
 
     //nested loops:
-    outer@ while (number<5){
-        number++
-        println(number)
+//    outer@ while (number<5){
+//        number++
+//        println(number)
+//
+//        var i=0
+//        while (i<5){
+//            println("*** $i")
+//            i++
+//        }
+//    }
+//}
 
-        var i=0
-        while (i<5){
-            println("*** $i")
-            i++
-        }
+    //loops challenge
+    var number = 0
+    var evenCounter = 0
+    while (number < 20) {
+        number++
+        if (!evenNumbers(number)) continue
+
+        println(number)
+        evenCounter++
+
+
     }
+    println("Challenge using for loop:")
+    evenCounter=0
+    for(i in 1..20){
+        if(i%2!=0)continue
+
+        println(i)
+        evenCounter++
+    }
+    println("Even numbers found - while loop = $evenCounter")
+    println("Even numbers found -for loop = $evenCounter")
 }
 
+
+fun evenNumbers(num: Int): Boolean = (num % 2) == 0
 //varargs: define as many arguments as you want i.e indefinite numbers
 //fun sum(vararg numbers: Int): Int {
 //    var result = 0
