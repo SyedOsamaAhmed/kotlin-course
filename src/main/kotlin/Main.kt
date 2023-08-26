@@ -1,35 +1,22 @@
 fun main() {
-    val car=Car()
-    car.name="Honda Accord"
-    car.color="black"
-    car.model="honda"
+//    val car=Car("Honda Accord","honda","black")
 
-    println("Name: ${car.name}, model: ${car.model}, color: ${car.color}")
 
-    car.move()
-    car.stop()
+//    println("Name: ${car.name}, model: ${car.model}, color: ${car.color}")
 
-    var car2=Car()
-    car2.name="vitz"
-    car2.model="Japan"
-    car2.color="royal blue"
+//    car.move()
+//    car.stop()
 
-    println("\nName: ${car2.name}, model: ${car2.model}, color: ${car2.color}")
-    car2.move()
-    car2.stop()
+//    val car1=Car("Ford","Mustang","Royal Blue")
+//    println("\nName: ${car1.name}, model: ${car1.model}, color: ${car1.color}")
+
+//    car1.move()
+//    car1.stop()
+
+    val name=User("John","Smith",24)
+    val friend=User("kept","oath",26)
+    println(name.name)
+    println(friend.name)
 
 }
 
-class Car{
-    var name=""
-    var model=""
-    var color=""
-
-    fun move(){
-        println("$name is moving")
-    }
-
-    fun stop(){
-        println("$name has stopped")
-    }
-}
