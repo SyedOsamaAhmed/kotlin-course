@@ -13,10 +13,16 @@ fun main() {
 //    car1.move()
 //    car1.stop()
 
-    val name=User("John","Smith",24)
-    val friend=User("kept","oath",26)
-    println(name.name)
-    println(friend.name)
+    val name = User("John")
+    val friend = User("kept", "oath")
+    println("Name = ${friend.name}")
+    println("LastName = ${friend.lastName}")
+    println("Age = ${friend.age}")
 
+    println("\n")
+
+    println("Name = ${name.name}")
+    println("LastName = ${name.lastName}")
+    println("Age = ${name.age}")
 }
 
