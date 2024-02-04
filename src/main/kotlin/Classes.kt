@@ -1,9 +1,37 @@
-// Enum Class: Collection of constants (Fixed set of values)
+/*
+Delegates:
+For some reason we have to use multiple inheritance but kotlin allows single inheritance so we use delegates they are multiple plugins as many implementation as required
+ */
 
-enum class Direction(var direction: String, var distance: Int) {
-    NORTH("north", 10), SOUTH("south", 20), EAST("east", 30), WEST("west", 40);
+interface  A{
+    fun print()
+}
 
-    fun printData(){
-        println("Direction = $direction and Distance = $distance")
+interface B{
+    fun print2()
+}
+
+class FirstDelegate:A{
+    override fun print() {
+        TODO("Not yet implemented")
+    }
+
+}
+
+
+class SecondDelegate:B{
+    override fun print2() {
+        TODO("Not yet implemented")
+    }
+
+}
+
+class App: A by FirstDelegate(),B by SecondDelegate(){
+    override fun print() {
+        TODO("Not yet implemented")
+    }
+
+    override fun print2() {
+        TODO("Not yet implemented")
     }
 }
